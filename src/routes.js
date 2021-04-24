@@ -34,7 +34,8 @@ const routes = [
       //{ path: '/', element: <Navigate to="/app/dashboard" /> },
       { path: '/', element: <Navigate to="modules" /> },
       { path: '*', element: <Navigate to="/404" /> },
-      { path: 'modules', element: <Modules /> }
+      { path: 'modules', element: <Modules /> },
+      { path: 'learning', element: <Modules /> }
     ]
   }
 ];
