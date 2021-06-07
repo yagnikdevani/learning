@@ -10,6 +10,7 @@ import ProductList from 'src/pages/ProductList';
 import Register from 'src/pages/Register';
 import Settings from 'src/pages/Settings';
 import Modules from 'src/pages/Modules';
+import Pharmacy from 'src/pages/Pharmacy';
 
 const routes = [
   {
@@ -35,7 +36,7 @@ const routes = [
       { path: '/', element: <Navigate to="modules" /> },
       { path: '*', element: <Navigate to="/404" /> },
       { path: 'modules', element: <Modules /> },
-      { path: 'learning', element: <Modules /> }
+      { path: 'pharmacy', element: <Pharmacy /> }
     ]
   }
 ];

@@ -49,8 +49,10 @@ const DialogActions = withStyles((theme) => ({
   },
 }))(MuiDialogActions);
 
-export default function CustomizedDialogs({isDialogOpened,handleCloseDialog}) {
-
+export default function CustomizedDialogs(props) {
+  
+  const {isDialogOpened,handleCloseDialog,modeltitle,modelContent} =  props;
+  
   const handleClose = () => {
     handleCloseDialog(false);
   };
@@ -59,7 +61,7 @@ export default function CustomizedDialogs({isDialogOpened,handleCloseDialog}) {
     <div>
       <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={isDialogOpened}>
         <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-          Modal title
+          {modeltitle}
         </DialogTitle>
         <DialogContent dividers>
           <Typography gutterBottom>
